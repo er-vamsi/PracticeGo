@@ -1,3 +1,5 @@
+//This is belongs to Methods
+
 package main
 
 import "fmt"
@@ -9,10 +11,15 @@ func (s SPrint) greet(st string){
 }
 
 type SPrint1 string
+
 func (s1 SPrint1) greet(st1, st2 string) string{
 	return fmt.Sprint(st1,st2)
 }
 func main(){
-	sp1 SPrint
+	var s SPrint
+	s.greet("Thota")
+	var s1 SPrint1
+	n := s1.greet("Venkata","Thota")
+	fmt.Println(n)
 
 }
