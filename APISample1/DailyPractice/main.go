@@ -19,7 +19,7 @@ type HelloWorldResponse struct {
 }
 
 func main() {
-	port := 9090
+	port := 8080
 
 	handler := newValidationHandler(newHelloWroldHandler())
 
